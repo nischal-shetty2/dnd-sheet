@@ -56,8 +56,8 @@ export function TopicList() {
         items={topics.map((topic) => topic.id!).filter(Boolean)}
         strategy={verticalListSortingStrategy}>
         <div className="space-y-4">
-          {topics.map((topic, index) => (
-            <TopicItem key={`${topic.id}`} topic={topic} index={index} />
+          {topics.map((topic) => (
+            <TopicItem key={`${topic.id}`} topic={topic} />
           ))}
         </div>
       </SortableContext>

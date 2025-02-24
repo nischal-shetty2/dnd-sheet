@@ -6,7 +6,6 @@ import { useMemo, useState } from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import {
-  Edit,
   Edit2Icon,
   GripVertical,
   Star,

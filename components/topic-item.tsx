@@ -11,10 +11,9 @@ import { useStore } from "@/lib/store";
 
 interface TopicItemProps {
   topic: Topic;
-  index: number;
 }
 
-export function TopicItem({ topic, index }: TopicItemProps) {
+export function TopicItem({ topic }: TopicItemProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [height, setHeight] = useState<number | string>(0);
@@ -112,7 +111,9 @@ export function TopicItem({ topic, index }: TopicItemProps) {
               size="icon"
               onClick={(e) => {
                 e.stopPropagation();
-                topic.id && deleteTopic(topic.id);
+                if (topic.id) {
+                  deleteTopic(topic.id);
+                }
               }}>
               <Trash className="h-4 w-4" />
             </Button>
