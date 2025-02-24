@@ -69,6 +69,16 @@ export function TopicItem({ topic }: TopicItemProps) {
     }
   }, [isEditing]);
 
+  useEffect(() => {
+    if (
+      topic.totalQuestions !== undefined &&
+      topic.totalQuestions === 0 &&
+      topic.id
+    ) {
+      deleteTopic(topic.id);
+    }
+  }, [topic.totalQuestions, topic.id, deleteTopic]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const trimmedTitle = title.trim();
