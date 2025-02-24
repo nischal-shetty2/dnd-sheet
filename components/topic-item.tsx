@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { AddQuestionModal } from "./add-topic";
+const MemoizedQuestionList = React.memo(QuestionList);
 
 interface TopicItemProps {
   topic: Topic;
@@ -195,7 +196,7 @@ export function TopicItem({ topic }: TopicItemProps) {
         style={{ height: typeof height === "number" ? `${height}px` : height }}
         className="overflow-hidden transition-[height] duration-300 ease-in-out">
         <CardContent className="p-4 pt-0 sm:p-6 sm:pt-0">
-          <QuestionList
+          <MemoizedQuestionList
             key={`${topic.id}-${isExpanded}`}
             topicId={topic.id!}
             questions={topic.questions}
