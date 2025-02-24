@@ -127,7 +127,7 @@ export function TopicItem({ topic }: TopicItemProps) {
         isDragging ? "opacity-50" : ""
       } w-full transition-shadow hover:shadow-md mb-4`} // Added margin bottom
     >
-      <CardHeader className="p-4 sm:p-6 flex flex-col md:flex-row md:items-center md:justify-between">
+      <CardHeader className="p-4 flex flex-col md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-2 md:flex-1">
           <Button
             variant="ghost"

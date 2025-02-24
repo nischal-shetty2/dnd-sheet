@@ -3828,13 +3828,11 @@
           "difficulty": "Medium",
           "name": "Implement Stack using Arrays",
           "problemUrl": "https://www.geeksforgeeks.org/problems/implement-stack-using-array/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement Stack using Arrays",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/implement-stack-using-array/1",
@@ -3861,13 +3859,11 @@
           "difficulty": "Medium",
           "name": "Implement Queue using Arrays",
           "problemUrl": "https://www.geeksforgeeks.org/problems/implement-queue-using-array/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement Queue using Arrays",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/implement-queue-using-array/1",
@@ -3894,13 +3890,11 @@
           "difficulty": "Medium",
           "name": "Implement Stack using Queue",
           "problemUrl": "https://leetcode.com/problems/implement-stack-using-queues",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement Stack using Queue",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/implement-stack-using-queues",
@@ -3927,13 +3921,11 @@
           "difficulty": "Medium",
           "name": "Implement Queue using Stack",
           "problemUrl": "https://leetcode.com/problems/implement-queue-using-stacks",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement Queue using Stack",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/implement-queue-using-stacks",
@@ -3960,13 +3952,11 @@
           "difficulty": "Medium",
           "name": "Implement stack using Linkedlist",
           "problemUrl": "https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement stack using Linkedlist",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1",
@@ -3993,13 +3983,11 @@
           "difficulty": "Medium",
           "name": "Implement queue using Linkedlist",
           "problemUrl": "https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement queue using Linkedlist",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/implement-queue-using-linked-list/1",
@@ -4026,13 +4014,11 @@
           "difficulty": "Medium",
           "name": "Check for balanced paranthesis",
           "problemUrl": "https://leetcode.com/problems/valid-parentheses",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Check for balanced paranthesis",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/valid-parentheses",
@@ -4059,13 +4045,11 @@
           "difficulty": "Medium",
           "name": "Implement Min Stack",
           "problemUrl": "https://leetcode.com/problems/min-stack",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Implement Min Stack",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/min-stack",
@@ -4092,13 +4076,11 @@
           "difficulty": "Medium",
           "name": "Infix to Postfix Conversion using Stack",
           "problemUrl": "https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Infix to Postfix Conversion using Stack",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
@@ -4125,13 +4107,11 @@
           "difficulty": "Medium",
           "name": "Prefix to Infix Conversion",
           "problemUrl": "https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Prefix to Infix Conversion",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1",
@@ -4158,13 +4138,11 @@
           "difficulty": "Medium",
           "name": "Prefix to Postfix Conversion",
           "problemUrl": "https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Prefix to Postfix Conversion",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1",
@@ -4191,13 +4169,11 @@
           "difficulty": "Medium",
           "name": "Postfix to Prefix Conversion",
           "problemUrl": "https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Postfix to Prefix Conversion",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1",
@@ -4224,13 +4200,11 @@
           "difficulty": "Medium",
           "name": "Postfix to Infix",
           "problemUrl": "https://www.geeksforgeeks.org/problems/postfix-to-infix-conversion/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Postfix to Infix",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/postfix-to-infix-conversion/1",
@@ -4257,13 +4231,11 @@
           "difficulty": "Medium",
           "name": "Next Greater Element",
           "problemUrl": "https://leetcode.com/problems/next-greater-element-i",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Next Greater Element",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/next-greater-element-i",
@@ -4290,13 +4262,11 @@
           "difficulty": "Medium",
           "name": "Next Greater Element 2",
           "problemUrl": "https://leetcode.com/problems/next-greater-element-ii",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Next Greater Element 2",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/next-greater-element-ii",
@@ -4323,13 +4293,11 @@
           "difficulty": "Medium",
           "name": "Next Smaller Element",
           "problemUrl": "https://www.interviewbit.com/problems/nearest-smaller-element",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Next Smaller Element",
         "subTopic": "DSA",
         "resource": "https://www.interviewbit.com/problems/nearest-smaller-element",
@@ -4356,13 +4324,11 @@
           "difficulty": "Medium",
           "name": "Number of NGEs to the right",
           "problemUrl": "https://www.geeksforgeeks.org/problems/number-of-nges-to-the-right/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Number of NGEs to the right",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/number-of-nges-to-the-right/1",
@@ -4389,13 +4355,11 @@
           "difficulty": "Medium",
           "name": "Trapping Rainwater",
           "problemUrl": "https://leetcode.com/problems/trapping-rain-water",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Trapping Rainwater",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/trapping-rain-water",
@@ -4422,13 +4386,11 @@
           "difficulty": "Medium",
           "name": "Sum of subarray minimum",
           "problemUrl": "https://leetcode.com/problems/sum-of-subarray-minimums",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Sum of subarray minimum",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/sum-of-subarray-minimums",
@@ -4455,13 +4417,11 @@
           "difficulty": "Medium",
           "name": "Asteroid Collision",
           "problemUrl": "https://leetcode.com/problems/asteroid-collision",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Asteroid Collision",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/asteroid-collision",
@@ -4488,13 +4448,11 @@
           "difficulty": "Medium",
           "name": "Sum of subarray ranges",
           "problemUrl": "https://leetcode.com/problems/sum-of-subarray-ranges",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Sum of subarray ranges",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/sum-of-subarray-ranges",
@@ -4521,13 +4479,11 @@
           "difficulty": "Medium",
           "name": "Remove k Digits",
           "problemUrl": "https://leetcode.com/problems/remove-k-digits",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Remove k Digits",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/remove-k-digits",
@@ -4554,13 +4510,11 @@
           "difficulty": "Medium",
           "name": "Largest rectangle in a histogram",
           "problemUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Largest rectangle in a histogram",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/largest-rectangle-in-histogram",
@@ -4587,13 +4541,11 @@
           "difficulty": "Medium",
           "name": "Maximal Rectangles",
           "problemUrl": "https://leetcode.com/problems/maximal-rectangle",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Maximal Rectangles",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/maximal-rectangle",
@@ -4620,13 +4572,11 @@
           "difficulty": "Medium",
           "name": "Sliding Window maximum",
           "problemUrl": "https://leetcode.com/problems/sliding-window-maximum",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Sliding Window maximum",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/sliding-window-maximum",
@@ -4653,13 +4603,11 @@
           "difficulty": "Medium",
           "name": "Stock span problem",
           "problemUrl": "https://leetcode.com/problems/online-stock-span",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "Stock span problem",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/online-stock-span",
@@ -4686,13 +4634,11 @@
           "difficulty": "Medium",
           "name": "LRU cache (IMPORTANT)",
           "problemUrl": "https://leetcode.com/problems/lru-cache",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "LRU cache (IMPORTANT)",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/lru-cache",
@@ -4719,13 +4665,11 @@
           "difficulty": "Medium",
           "name": "LFU cache",
           "problemUrl": "https://leetcode.com/problems/lfu-cache",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "LFU cache",
         "subTopic": "DSA",
         "resource": "https://leetcode.com/problems/lfu-cache",
@@ -4752,13 +4696,11 @@
           "difficulty": "Medium",
           "name": "The Celebrity Problem",
           "problemUrl": "https://www.geeksforgeeks.org/problems/the-celebrity-problem/1",
-          "topics": [
-            "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
-          ],
+          "topics": ["Stack and Queues [Pre-In-Post-fix, Monotonic Stack]"],
           "updatedAt": "2025-02-23T15:34:22.197Z",
           "verified": true
         },
-        "topic": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]",
+        "topic": "Stack and Queues [Pre-In-Post-fix, Monotonic Stack]",
         "title": "The Celebrity Problem",
         "subTopic": "DSA",
         "resource": "https://www.geeksforgeeks.org/problems/the-celebrity-problem/1",

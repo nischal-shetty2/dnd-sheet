@@ -31,6 +31,7 @@ export function QuestionItem({ topicId, question }: QuestionItemProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState(question.title);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [isStarClicked, setIsStarClicked] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const { editQuestion, deleteQuestion } = useStore();
 
@@ -109,7 +110,7 @@ export function QuestionItem({ topicId, question }: QuestionItemProps) {
     <div
       ref={setNodeRef}
       style={style}
-      className={`group flex flex-col sm:flex-row items-center gap-3 rounded-lg border bg-card p-4 text-card-foreground hover:shadow-sm transition-shadow ${
+      className={`group flex flex-col sm:flex-row items-center gap-3 rounded-lg border bg-card p-2 text-card-foreground hover:shadow-sm transition-shadow ${
         isDragging ? "opacity-50" : ""
       }`}>
       <div className="flex items-center gap-3 w-full sm:w-auto">
@@ -210,8 +211,16 @@ export function QuestionItem({ topicId, question }: QuestionItemProps) {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant="ghost" size="icon" className="shrink-0">
-                <Star className="h-4 w-4 text-yellow-500" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="shrink-0"
+                onClick={() => setIsStarClicked(!isStarClicked)}>
+                <Star
+                  className={`h-4 w-4 ${
+                    isStarClicked ? "fill-yellow-500" : "text-yellow-500"
+                  }`}
+                />
               </Button>
             </TooltipTrigger>
             <TooltipContent className=" text-xs bg-gray-200 rounded-xl dark:text-black mb-2 px-2 py-1">

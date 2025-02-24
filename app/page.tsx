@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="container mx-auto sm:max-w-7xl px-4 py-8">
+      <main className="container mx-auto sm:max-w-6xl px-4 py-8">
         {" "}
         <div className="flex flex-col gap-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
