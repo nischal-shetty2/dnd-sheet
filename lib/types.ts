@@ -2,6 +2,8 @@ export interface Question {
   id: string;
   title: string;
   link: string;
+  difficulty?: "easy" | "medium" | "hard";
+  videoUrl?: string;
 }
 
 export interface Sheet {

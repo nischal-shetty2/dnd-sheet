@@ -48,19 +48,31 @@ export function TopicList() {
   }
 
   return (
-    <DndContext
-      sensors={sensors}
-      collisionDetection={closestCenter}
-      onDragEnd={handleDragEnd}>
-      <SortableContext
-        items={topics.map((topic) => topic.id!).filter(Boolean)}
-        strategy={verticalListSortingStrategy}>
+    <>
+      {topics.length === 0 ? (
         <div className="space-y-4">
-          {topics.map((topic) => (
-            <TopicItem key={`${topic.id}`} topic={topic} />
+          {[...Array(10)].map((_, index) => (
+            <div
+              key={index}
+              className="animate-pulse bg-gray-300 h-20 rounded-xl"></div>
           ))}
         </div>
-      </SortableContext>
-    </DndContext>
+      ) : (
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragEnd={handleDragEnd}>
+          <SortableContext
+            items={topics.map((topic) => topic.id!).filter(Boolean)}
+            strategy={verticalListSortingStrategy}>
+            <div className="space-y-4">
+              {topics.map((topic) => (
+                <TopicItem key={`${topic.id}`} topic={topic} />
+              ))}
+            </div>
+          </SortableContext>
+        </DndContext>
+      )}
+    </>
   );
 }

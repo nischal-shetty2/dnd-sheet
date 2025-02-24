@@ -7,8 +7,8 @@ import {
   useSensor,
   useSensors,
   PointerSensor,
-  KeyboardSensor,
   DragEndEvent,
+  TouchSensor,
 } from "@dnd-kit/core";
 import {
   restrictToVerticalAxis,
@@ -16,9 +16,9 @@ import {
 } from "@dnd-kit/modifiers";
 import {
   SortableContext,
-  sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+import { TooltipProvider } from "@radix-ui/react-tooltip";
 
 interface QuestionListProps {
   topicId: string;
@@ -30,8 +30,17 @@ export function QuestionList({ topicId, questions }: QuestionListProps) {
 
   // Remove activation constraints to avoid lag; use default sensor config
   const sensors = useSensors(
-    useSensor(PointerSensor),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 8,
+      },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 250,
+        tolerance: 5,
+      },
+    })
   );
 
   function handleDragEnd(event: DragEndEvent) {
@@ -55,9 +64,6 @@ export function QuestionList({ topicId, questions }: QuestionListProps) {
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}
-        onDragStart={(event) => {
-          console.log("Drag started", event);
-        }}
         onDragEnd={handleDragEnd}
         modifiers={[restrictToVerticalAxis, restrictToParentElement]}>
         <SortableContext
@@ -65,11 +71,13 @@ export function QuestionList({ topicId, questions }: QuestionListProps) {
           strategy={verticalListSortingStrategy}>
           <div className="space-y-2">
             {questions.map((question, index) => (
-              <QuestionItem
-                key={`${question.title}-${index}`}
-                topicId={topicId}
-                question={question}
-              />
+              <TooltipProvider key={`${question.id}-${index}`}>
+                <QuestionItem
+                  key={`${question.title}-${index}`}
+                  topicId={topicId}
+                  question={question}
+                />
+              </TooltipProvider>
             ))}
           </div>
         </SortableContext>

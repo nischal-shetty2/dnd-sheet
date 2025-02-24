@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { Plus } from "lucide-react";
+import { Plus, Link as LinkIcon } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { Input } from "./ui/input";
 import { Label } from "@radix-ui/react-label";
@@ -15,7 +15,6 @@ const DialogContent = dynamic(
   () => import("@/components/ui/dialog").then((mod) => mod.DialogContent),
   { ssr: false }
 );
-// Removed unused DialogDescription import
 const DialogFooter = dynamic(
   () => import("@/components/ui/dialog").then((mod) => mod.DialogFooter),
   { ssr: false }
@@ -32,84 +31,88 @@ const DialogTrigger = dynamic(
   () => import("@/components/ui/dialog").then((mod) => mod.DialogTrigger),
   { ssr: false }
 );
+
 export const AddTopicModal = () => {
   const { addTopic, addQuestion } = useStore();
   const [topicTitle, setTopicTitle] = useState("");
   const [questionTitle, setQuestionTitle] = useState("");
   const [questionLink, setQuestionLink] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-  const [newTopicId, setNewTopicId] = useState<string | null>(null); // Store the new topic ID
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const topicId = crypto.randomUUID();
 
-    // 1. Add the topic first
-    const topicId = crypto.randomUUID(); // Generate ID here
-    addTopic(topicTitle, topicId); // Pass the generated ID
-    setNewTopicId(topicId); //Store the new topic ID so we can add question to it.
-
-    // 2. Then, add the question using the new topicId
-    if (newTopicId) {
-      addQuestion(newTopicId, { title: questionTitle, link: questionLink });
-    }
+    // Add topic and its first question
+    addTopic(topicTitle, topicId);
     addQuestion(topicId, { title: questionTitle, link: questionLink });
+
+    // Reset form
+    setTopicTitle("");
+    setQuestionTitle("");
     setQuestionLink("");
     setIsOpen(false);
-    setNewTopicId(null); // Reset for the next topic
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button>
-          <Plus className="mr-2 h-4 w-4" /> Add Topic
+        <Button variant="default" className="gap-2">
+          <Plus className="h-4 w-4" />
+          New Topic
         </Button>
       </DialogTrigger>
-      <DialogContent>
-        <form onSubmit={handleSubmit}>
+      <DialogContent className="sm:max-w-[425px] w-full">
+        <form onSubmit={handleSubmit} className="flex flex-col h-full">
           <DialogHeader>
-            <DialogTitle>Enter Topic and Question Details</DialogTitle>
+            <DialogTitle>Create New Topic</DialogTitle>
           </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="topicTitle">Topic Title</Label>
+          <div className="space-y-6 py-6 flex-1">
+            <div className="space-y-2">
+              <Label htmlFor="topicTitle">Topic Name</Label>
               <Input
                 id="topicTitle"
-                type="text"
                 value={topicTitle}
                 onChange={(e) => setTopicTitle(e.target.value)}
-                placeholder="Enter topic title"
-                className="col-span-3"
+                placeholder="Enter a name for your topic"
+                className="w-full"
                 required
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="questionTitle">Question Title</Label>
+            <div className="space-y-2">
+              <Label htmlFor="questionTitle">First Question</Label>
               <Input
                 id="questionTitle"
-                type="text"
                 value={questionTitle}
                 onChange={(e) => setQuestionTitle(e.target.value)}
-                placeholder="Enter question title"
-                className="col-span-3"
+                placeholder="Add your first question"
+                className="w-full"
                 required
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
+            <div className="space-y-2">
               <Label htmlFor="questionLink">Question Link</Label>
-              <Input
-                id="questionLink"
-                type="text"
-                value={questionLink}
-                onChange={(e) => setQuestionLink(e.target.value)}
-                placeholder="Enter question link"
-                className="col-span-3"
-                required
-              />
+              <div className="relative">
+                <Input
+                  id="questionLink"
+                  value={questionLink}
+                  onChange={(e) => setQuestionLink(e.target.value)}
+                  placeholder="https://"
+                  className="w-full pl-9"
+                  required
+                />
+                <LinkIcon className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
             </div>
           </div>
           <DialogFooter>
-            <Button type="submit">Save changes</Button>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setIsOpen(false)}>
+              Cancel
+            </Button>
+            <Button type="submit">Create Topic</Button>
           </DialogFooter>
         </form>
       </DialogContent>
@@ -117,11 +120,18 @@ export const AddTopicModal = () => {
   );
 };
 
-export const AddQuestionModal = ({ topicId }: { topicId: string }) => {
+export const AddQuestionModal = ({
+  topicId,
+  isOpen,
+  setIsOpen,
+}: {
+  topicId: string;
+  isOpen: boolean;
+  setIsOpen: (value: boolean) => void;
+}) => {
   const { addQuestion } = useStore();
   const [questionTitle, setQuestionTitle] = useState("");
   const [questionLink, setQuestionLink] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -134,43 +144,51 @@ export const AddQuestionModal = ({ topicId }: { topicId: string }) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button>
-          <Plus className="mr-2 h-4 w-4" /> Add Question
+        <Button variant="outline" size="sm" className="gap-2">
+          <Plus className="h-4 w-4" />
+          <p className=" hidden sm:block">Add Question</p>
         </Button>
       </DialogTrigger>
-      <DialogContent>
-        <form onSubmit={handleSubmit}>
+      <DialogContent className="sm:max-w-[425px] w-full">
+        <form onSubmit={handleSubmit} className="flex flex-col h-full">
           <DialogHeader>
-            <DialogTitle>Enter Question Details</DialogTitle>
+            <DialogTitle>Add New Question</DialogTitle>
           </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="questionTitle">Question Title</Label>
+          <div className="space-y-6 py-6 flex-1">
+            <div className="space-y-2">
+              <Label htmlFor="newQuestionTitle">Question Title</Label>
               <Input
-                id="questionTitle"
-                type="text"
+                id="newQuestionTitle"
                 value={questionTitle}
                 onChange={(e) => setQuestionTitle(e.target.value)}
-                placeholder="Enter question title"
-                className="col-span-3"
+                placeholder="Enter your question"
+                className="w-full"
                 required
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="questionLink">Question Link</Label>
-              <Input
-                id="questionLink"
-                type="text"
-                value={questionLink}
-                onChange={(e) => setQuestionLink(e.target.value)}
-                placeholder="Enter question link"
-                className="col-span-3"
-                required
-              />
+            <div className="space-y-2">
+              <Label htmlFor="newQuestionLink">Question Link</Label>
+              <div className="relative">
+                <Input
+                  id="newQuestionLink"
+                  value={questionLink}
+                  onChange={(e) => setQuestionLink(e.target.value)}
+                  placeholder="https://"
+                  className="w-full pl-9"
+                  required
+                />
+                <LinkIcon className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              </div>
             </div>
           </div>
           <DialogFooter>
-            <Button type="submit">Save changes</Button>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setIsOpen(false)}>
+              Cancel
+            </Button>
+            <Button type="submit">Add Question</Button>
           </DialogFooter>
         </form>
       </DialogContent>
