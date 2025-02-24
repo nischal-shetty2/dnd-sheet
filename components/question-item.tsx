@@ -8,7 +8,6 @@ import {
   GripVertical,
   Star,
   Trash,
-  Youtube,
   ExternalLink,
 } from "lucide-react";
 import { useStore } from "@/lib/store";
