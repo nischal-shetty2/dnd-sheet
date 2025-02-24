@@ -1,4 +1,4 @@
-# D&D Character Sheet
+# D&D Sheet
 
 A modern, interactive D&D DSA sheet built with Next.js.
 
